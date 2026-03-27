@@ -120,18 +120,19 @@ header {
     cursor: pointer;
 }
 
+/* മാറ്റങ്ങൾ വരുത്തിയത് ഇവിടെയാണ് */
 .logo-img {
     width: 45px;
     height: 45px;
-    background: linear-gradient(135deg, var(--primary), #15803d);
-    color: white;
+    background: transparent; 
+    color: var(--primary); 
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 800;
     border-radius: 12px;
     font-size: 1.2rem;
-    border: 2px solid rgba(255,255,255,0.1);
+    border: 2px solid var(--primary); 
 }
 
 .brand-text {
