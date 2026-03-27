@@ -116,23 +116,15 @@ header {
 .logo-wrapper {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 6px; /* അക്ഷരങ്ങൾ തമ്മിലുള്ള അകലം കുറച്ചു */
     cursor: pointer;
 }
 
-/* മാറ്റങ്ങൾ വരുത്തിയത് ഇവിടെയാണ് */
 .logo-img {
-    width: 45px;
-    height: 45px;
-    background: transparent; 
-    color: var(--primary); 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 1.5rem;
     font-weight: 800;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    border: 2px solid var(--primary); 
+    letter-spacing: 1px;
+    color: var(--text-main); /* വെള്ള നിറം നൽകി */
 }
 
 .brand-text {
@@ -491,7 +483,7 @@ footer {
         display: block;
     }
 
-    /* === HORIZONTAL SCROLL FOR COURSES (ADDED) === */
+    /* === HORIZONTAL SCROLL FOR COURSES === */
     .courses-grid {
         display: flex;
         flex-wrap: nowrap;
@@ -517,5 +509,4 @@ footer {
         scroll-snap-align: center;
         min-width: 280px;
     }
-    /* ============================================== */
 }
