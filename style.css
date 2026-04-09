@@ -1,13 +1,11 @@
-/* =========================================
-   1. RESET & VARIABLES
-   ========================================= */
+
 :root {
-    --primary: #22c55e;        /* The Green Accent */
+    --primary: #22c55e;        
     --primary-hover: #16a34a;
-    --bg-dark: #0f172a;        /* Navy/Black Tone */
-    --bg-card: #1e293b;        /* Lighter Navy for cards */
-    --text-main: #f8fafc;      /* White-ish */
-    --text-muted: #94a3b8;     /* Gray */
+    --bg-dark: #0f172a;        
+    --bg-card: #1e293b;        
+    --text-main: #f8fafc;      
+    --text-muted: #94a3b8;     
     --transition: all 0.3s ease;
     --font-main: 'Outfit', sans-serif;
 }
@@ -39,16 +37,14 @@ ul {
     list-style: none;
 }
 
-/* =========================================
-   2. UTILITIES & COMPONENTS
-   ========================================= */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Buttons */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -91,9 +87,7 @@ ul {
     font-size: 1.1rem;
 }
 
-/* =========================================
-   3. HEADER & NAVIGATION
-   ========================================= */
+
 header {
     position: fixed;
     top: 0;
@@ -112,11 +106,10 @@ header {
     align-items: center;
 }
 
-/* Logo Styling */
 .logo-wrapper {
     display: flex;
     align-items: center;
-    gap: 6px; /* അക്ഷരങ്ങൾ തമ്മിലുള്ള അകലം കുറച്ചു */
+    gap: 6px; 
     cursor: pointer;
 }
 
@@ -124,7 +117,7 @@ header {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: 1px;
-    color: var(--text-main); /* വെള്ള നിറം നൽകി */
+    color: var(--text-main); 
 }
 
 .brand-text {
@@ -134,7 +127,7 @@ header {
     color: var(--text-main);
 }
 
-/* Navigation Links */
+
 .nav-menu {
     display: flex;
     gap: 30px;
@@ -157,9 +150,7 @@ header {
     cursor: pointer;
 }
 
-/* =========================================
-   4. HERO SECTION
-   ========================================= */
+
 .hero {
     height: 100vh;
     min-height: 600px;
@@ -170,7 +161,7 @@ header {
     overflow: hidden;
 }
 
-/* Abstract Background shapes */
+
 .blob {
     position: absolute;
     filter: blur(80px);
@@ -191,7 +182,7 @@ header {
     right: -5%;
     width: 400px;
     height: 400px;
-    background: #3b82f6; /* Blue accent for depth */
+    background: #3b82f6; 
     border-radius: 50%;
     animation: float 8s ease-in-out infinite reverse;
 }
@@ -220,7 +211,7 @@ header {
 
 .hero h1 span {
     color: var(--primary);
-    /* Gradient Text */
+   
     background: linear-gradient(to right, var(--primary), #4ade80);
     background-clip: text;
     -webkit-background-clip: text;
@@ -234,7 +225,7 @@ header {
     max-width: 90%;
 }
 
-/* Hero Image/Graphic side */
+
 .hero-visual {
     position: absolute;
     right: 5%;
@@ -245,7 +236,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none; /* Hidden on mobile by default, shown in MQ */
+    display: none; 
 }
 
 .grid-visual {
@@ -263,9 +254,7 @@ header {
     backdrop-filter: blur(5px);
 }
 
-/* =========================================
-   5. COURSES SECTION
-   ========================================= */
+
 .courses-section {
     padding: 100px 0;
     background-color: var(--bg-dark);
@@ -300,7 +289,7 @@ header {
     position: relative;
 }
 
-/* Overlay text on image placeholder for clarity */
+
 .card-image::after {
     content: '';
     position: absolute;
@@ -348,9 +337,7 @@ header {
     padding-top: 15px;
 }
 
-/* =========================================
-   6. JOIN / PROCESS SECTION
-   ========================================= */
+
 .join-section {
     padding: 100px 0;
     background: linear-gradient(to bottom, var(--bg-dark), #020617);
@@ -407,9 +394,7 @@ header {
     font-size: 0.9rem;
 }
 
-/* =========================================
-   7. FOOTER
-   ========================================= */
+
 footer {
     background: #020617;
     padding: 40px 0;
@@ -431,16 +416,13 @@ footer {
     font-size: 0.9rem;
 }
 
-/* =========================================
-   8. ANIMATIONS & RESPONSIVE
-   ========================================= */
+
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
     100% { transform: translateY(0px); }
 }
 
-/* Fade Up Animation Class */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -451,7 +433,6 @@ footer {
     transform: translateY(0);
 }
 
-/* Mobile Responsive */
 @media (min-width: 768px) {
     .hero-visual { display: flex; }
     .steps-container { flex-direction: row; }
@@ -483,7 +464,6 @@ footer {
         display: block;
     }
 
-    /* === HORIZONTAL SCROLL FOR COURSES === */
     .courses-grid {
         display: flex;
         flex-wrap: nowrap;
@@ -495,7 +475,6 @@ footer {
         gap: 15px; 
     }
 
-    /* Hide the scrollbar for a cleaner look */
     .courses-grid::-webkit-scrollbar {
         display: none;
     }
@@ -505,7 +484,7 @@ footer {
     }
 
     .course-card {
-        flex: 0 0 85%; /* Shows 1 full card + peeks at the next one */
+        flex: 0 0 85%; 
         scroll-snap-align: center;
         min-width: 280px;
     }
